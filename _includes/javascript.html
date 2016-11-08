@@ -6,6 +6,12 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  // Software Carpentry tracker
   ga('create', 'UA-37305346-2', 'auto');
   ga('send', 'pageview');
+  // OU Libraries tracker
+  ga('create', 'UA-10291424-1', 'auto', 'ouTracker', {'allowLinker': true});
+  ga('ouTracker.require', 'linker')
+  ga('ouTracker.linker:autoLink', ['libraries.ou.edu', 'oulib-swc.github.io'], false, true);
+  ga('ouTracker.send', 'pageview');
 </script>
